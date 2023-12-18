@@ -15,6 +15,7 @@ const getTimeUnit = unit => unit < 10 ? '0' + unit : unit
 
 const insertCountdownValues = ({ days, hours, minutes, seconds }) => {
     secondsContainer.textContent = getTimeUnit(seconds)
+    minutesContainer.textContent = getTimeUnit(minutes)
     hoursContainer.textContent = getTimeUnit(hours)
     daysContainer.textContent = getTimeUnit(days)  
 }
